@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Bang Bang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <li><img src="images/slide-1.jpg" alt="..."  /></li>
+                <div class="firstname">banana</div>
+                <div class="lastname">store</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html" >home</a></li>
+                <li><a href="payment.html" class="active" >payment</a></li>
+                <li><a href="kontak.html" >kontak</a></li>
+                <li><img src="images/slide-2.jpg" alt="..."  /></li>  
+            </ul>
+        </nav>
+    </div>
+        <div class="container">
+            <h1 style="margin:10px;">PAYMENT</h1>
+            <form class="" action="index.html" method="post">
+               <input required class="input-form laf" type="text" name="" value="" placeholder="Nama">
+               <input required class="input-form laf" type="number" name="" value="" placeholder="08..">
+               <input required class="input-form-number laf" type="number" name="" value="1" placeholder="Jumlah" ng-model="jumlah">
+               <input required class="input-form-number laf" type="number" name="" value="20000" ng-model="harga">
+               <input disabled required class="input-form-value" type="number" name="" value="{{jumlah*harga}}" placeholder="Hasil" ng-model="Hasil">
+               <textarea class="input-form" cols="5" rows="5" name="comment" placeholder="Catatan" required></textarea>
+               </textarea>
+        <div style="overflow-x:auto;">
+            <label>Pilih Metode Pembayaran</label>
+            <table border=0 cellpadding="10">
+                <tr>
+                    <th><input type="checkbox"  value=""><img src="img/bni.png" width="60px" height="20px"></th>
+                    <th><input type="checkbox"  value=""><img src="img/logo-bca.png" width="60px" height="20px"></th>
+                    <th><input type="checkbox"  value=""><img src="img/bri.png" width="60px" height="25px"></th>
+                    
+                </tr>
+            </table>
+        </div>
+            <button class="btn-form-pay">Pay</button>
+            <button class="btn-form-change" id="myBtn">Batal</button>
+      </form>
+      </div>
+
+  </body>
+</html>
